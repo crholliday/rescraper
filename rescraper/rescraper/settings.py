@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'scrape',
     'django.contrib.staticfiles',
 ]
 
@@ -76,8 +77,10 @@ WSGI_APPLICATION = 'rescraper.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'rescraper',
+        'USER': 'postgres',
+        'PASSWORD': 'antigu12',
     }
 }
 

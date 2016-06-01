@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Rescraper - Real Estate Scraper</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    </head>
+     <body>
+        <div class="row">
+            <h3><a href="/">Rescraper - Real Estate Organizer</a></h3>
+            <div class="col s12">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
